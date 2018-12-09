@@ -1,0 +1,117 @@
+﻿* { box-sizing: border-box; }
+@font-face {
+font-family:"Exo Soft";
+src: url("Шрифты/Exo Soft/Exo Soft Medium.otf"); 
+}
+@font-face {
+    font-family: "Shilfa";
+    src: url("Шрифты/Shilfa.otf");
+}
+
+body {
+  margin: 0;
+  background:  #F5FFFA ;
+ }
+
+main{
+    margin:0.5% 5% ;
+    padding: 1%;
+    box-shadow: grey 0 0 5px;
+     background: #fefefe;
+     
+}
+#logo{font-family: "Shilfa";
+      font-size: 10vw;
+      color:#fefefe;
+      
+}
+header {
+  background:  #1ccfc9 ;
+  text-align: center; 
+  opacity:0.80;
+  
+}
+header a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  transition: .3s ease-in-out;
+  height:5%;
+  width:auto;
+
+  }
+nav {
+  display: inline;
+  margin: auto;
+  padding-right:4%;
+  justify-content:space-around;
+  text-align:center;
+  vertical-align:middle;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 ;
+}
+.topmenu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.topmenu > li {
+  margin-right:10px;
+  display:inline-block;
+  float:none;
+  position: relative;
+  font-family:  Exo Soft;
+}
+.topmenu > li > a {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fefefe; /*цвет букв глав меню*/ 
+  text-decoration: none !important; 
+}
+.topmenu li a:hover { color: #FFFFAF; } /*цвет при наведении на надписи*/
+footer {
+  background:  #1ccfc9 ;
+  height:auto;
+  opacity:0.80;
+  font-family: "Exo Soft";
+}
+ul.footer {
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 2%; /* Значение полей */
+    text-align: center;
+   }
+ul.footer li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5%; /* Отступ слева */ 
+    font-size: 20px;
+    color:#fefefe;
+    padding: 1%; /* Поля вокруг текста */
+    
+   }
+a{text-decoration: none !important; }
+
+@media screen and (max-width: 360px){
+    #logo{
+      font-size: 10vw;  
+      padding-top:4%;
+    }
+    .topmenu > li > a {
+        font-size: 12px;
+        padding-right: 10px;
+    }
+    main{
+    margin:0.5% 2% ;
+    padding: 1%;   
+    }
+    ul.footer li { 
+    font-size:14px;    
+   }
+    #coment{
+        font-size:12px;
+        margin:0 5%;
+    }
+}
