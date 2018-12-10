@@ -93,7 +93,9 @@ ul.footer li {
     
    }
 a{text-decoration: none !important; }
-
+#coment{
+color:#fefefe;
+}
 @media screen and (max-width: 360px){
     #logo{
       font-size: 10vw;  
@@ -113,5 +115,6 @@ a{text-decoration: none !important; }
     #coment{
         font-size:12px;
         margin:0 5%;
+        color:#fefefe;
     }
 }
